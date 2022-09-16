@@ -66,6 +66,82 @@ button {
 .container {
   padding: 0px 50px;
 }
+
+.cards__hab {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: 100vh;
+  min-height: 100vh;
+}
+.cards__hab h1 {
+  text-align: center;
+  display: inline-block;
+  text-decoration-color: #088bdd;
+}
+
+.img__hab img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20%;
+  border: 3px solid #ffffff;
+}
+
+.container__hab {
+  width: 1150px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cards {
+  position: relative;
+  padding: 10px;
+  width: 300px;
+  background-color: #fff;
+  margin: 20px;
+  border: 5px solid black;
+  border-radius: 20px;
+  transition: 0.5ms;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.container__hab h1 {
+  font-size: 2rem;
+}
+.container__hab .content__hab {
+  padding: 20px;
+  text-align: center;
+}
+.container__hab .cards .content__hab p {
+  color: blue;
+  transition: 0.5s;
+}
+.container__hab .cards .content__hab a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: 0.5s;
+  outline: none;
+  margin-top: 20px;
+}
+
+.container__hab .cards:hover {
+  background: #68abd6;
+  background-color: ;
+  color: #ffffff;
+  margin-top: -30px;
+}
+
 footer {
   position: absolute;
 }
