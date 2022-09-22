@@ -47,7 +47,9 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
-.sobre {
+.sobre,
+.meutrabalho,
+.contact {
   width: 75%;
   height: 200px;
   background: #68abd6;
@@ -58,97 +60,104 @@ button {
   justify-content: space-evenly;
   align-items: center;
 }
-.texto-sobre {
+.texto-sobre,
+.text-hab {
   width: 850px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
 .text-hab {
-  width: 100%;
+  width: 9%;
   height: 100%;
+  margin-top: 90px;
   position: absolute;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .cards__hab {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
-  align-items: 100vh;
-  min-height: 100vh;
+  align-items: center;
+  min-width: 100vh;
+  flex-wrap: wrap;
 }
-.cards__hab h1 {
-  text-align: center;
-  display: inline-block;
-  text-decoration-color: #088bdd;
-}
-
-.img__hab img {
-  width: 150px;
-  height: 150px;
-  border-radius: 20%;
-  border: 3px solid #ffffff;
-}
-
 .container__hab {
-  width: 300px;
+  width: 400px;
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.cards {
+.container__hab .cards {
   position: relative;
   padding: 10px;
   width: 300px;
-  background-color: #fff;
-  margin: 10px;
-  border: 2px solid black;
+  background: #68abd6;
+  margin: 20px;
+  border: 1px solid black;
+  overflow: hidden;
   border-radius: 20px;
-  text-align: center;
-  flex-wrap: wrap;
-}
-.container__hab .cards .content__hab {
-  padding: 20px;
+  transition: 0.05;
   text-align: center;
 }
-.container__hab .cards .content__hab p {
-  color: #0d0db3;
+.container__hab .img__hab {
+  transition: 0.05s;
 }
-.container__hab .cards .content__hab a {
+.container__hab .cards__hab h1 {
+  font-size: 2rem;
+}
+.container__hab .cards .contact {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  background-color: #5151f1;
-  color: #fff;
+  background-color: black;
+  color: #ffffff;
   border-radius: 40px;
   text-decoration: none;
+  transition: 0.05s;
   outline: none;
   margin-top: 20px;
 }
-
 .container__hab .cards:hover {
-  background: #68abd6;
+  background-color: #088bdd;
   color: #ffffff;
-  margin-top: -12px;
-  box-shadow: 2px 20px 25px blueviolet;
-  border-color: #ffff;
+  margin-top: -10px;
+  box-shadow: 2px 20px 25px blue;
+  border-color: #088bdd;
 }
 
-footer {
-  position: absolute;
-}
-footer-conteiner {
-  max-width: 1000px;
-  margin: 0 auto;
+.contact {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+form input,
+form textarea {
+  outline: unset;
+  padding: 20px;
+  width: 300px;
+  border: 1px solid blue;
+  border-radius: 20px;
+}
+#contatos {
+  padding: 50px;
+}
+#mensage {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: red;
+  padding-top: 20px;
 }

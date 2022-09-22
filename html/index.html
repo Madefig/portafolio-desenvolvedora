@@ -38,10 +38,12 @@
 <!--primera termina-->
 <!--segunda parte inicia-->
     <main>
-      <section class="sobre">
-        <div class="texto-sobre">
-          <h3 id="sobre">SOBRE MIM</h3>
-          <p>Meu nome e <strong>Madeline Figueroa</strong>, Venezuelana moro no Rio de Janeiro. Atualmente fazendo transição de carreira para a área de TI. Sou apaixonada pela arte e a tecnologia. Meu primeiro contato coma programacao foi no programa de formaçao da Toti diversidade JULHO/2022</p>
+      <section id="sobre">
+        <div class="sobre">
+          <div class="texto-sobre">
+            <h3>SOBRE MIM</h3>
+              <p>Meu nome e <strong>Madeline Figueroa</strong>, Venezuelana moro no Rio de Janeiro. Atualmente fazendo transição de carreira para a área de TI. Sou apaixonada pela arte e a tecnologia. Meu primeiro contato coma programacao foi no programa de formaçao da Toti diversidade JULHO/2022</p>
+         </div>
         </div>
       </section>
       <!--primer card-->
@@ -111,37 +113,40 @@
         </div>
       </div>
     </section>
-
-    <!--TERCERA PARTE-->
-    <section>
-      <h2 id="trabalho">Para conhecer meu trabalho</h2>
-      <button class="button-as-link">
-        <a href="https://github.com/Madefig" target="_blank">github</a>
-      </button>
-    </section>
-    
-      <!--CUARTA PARTE-->
-     <h2 id="contatos">Deixe seu contato</h2>
-
-     <form action="/formulario-contato" method="post">
-     <div>
-      <label for="nome">Nome:</label>
-      <input type="texto" placeholder="nome" id="nome" name="nome_usuario">
-       </div>
-       <br>
-        <div>
-      <label for="email">E-mail:</label>
-      <input type="email" placeholder="email" id="email" name="email_usuario">
-        </div>
-        <br>
-         <div>
-      <label for="texto">Texto:</label>
-      <textarea id="texto" placeholder="texto" name="texto_usuario"></textarea>
+    <!--TERCERA PARTE button-->
+    <section class="trabalho">
+      <div class="meutrabalho">
+        <h2 id="trabalho">PARA CONHECER MEU TRABALHO</h2>
+        <button class="button-as-link">
+          <a href="https://github.com/Madefig" target="_blank">github</a>   
+        </button>
       </div>
-      <br>
-      <div class="button">
-      <button type="submit">Enviar</button>  
-    </form>
-    </main>
+    </section>
+      <!--CUARTA PARTE formulario-->
+    <section class="contact">
+        <form class="form" id="card" name="formulario">
+          <h2 id="contatos">Deixe seu contato</h2>
+          <div>
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" placeholder="escreva seu nome" name="nome_usuario"/>
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input id="e-mail" type="e-mail" placeholder="escreva seu email" name="email_usuario"/>
+          </div>
+          <div>
+            <label  for="texto">Texto:</label>
+            <textarea id="texto" rows="2" placeholder="escreva um texto" name="texto_usuario"></textarea>
+          </div>
+          <div class="button">
+            <button id="enviar" type="submit">Enviar</button>
+            <p class="mensage" id="mensage"></p>
+            <br> 
+            <br>
+            <br>
+        </form>
+    </section>
+   </main>
+   <script src="../javascrip/formulario.js"></script>
   </body>
 </html>
