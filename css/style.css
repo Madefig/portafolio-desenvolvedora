@@ -129,10 +129,11 @@ button {
 }
 
 .contact {
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 75vh;
 }
 form {
   font-family: Arial, Helvetica, sans-serif;
@@ -151,13 +152,13 @@ form textarea {
   border: 1px solid blue;
   border-radius: 20px;
 }
-#contatos {
+.contatos {
   padding: 50px;
 }
-#mensage {
+.warnings {
   width: 200px;
   text-align: center;
   margin: auto;
-  color: red;
+  color: blue;
   padding-top: 20px;
 }

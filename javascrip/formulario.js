@@ -1,28 +1,31 @@
 const nome = document.getElementById("nome");
 const email = document.getElementById("email");
 const texto = document.getElementById("texto");
-const form = document.getElementById("card");
-const mensage = document.getElementById("mensage");
+const form = document.getElementById("form");
+const parrafo = document.getElementById("warnings");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  let mostrar = "";
+  console.log(nome.value, email.value, texto.value);
+  let warnings = "";
   let entrar = false;
-  let correo = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{3})+$/;
+  let regexEmail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{3})+$/;
   if (nome.value.length < 3) {
-    mostrar += `Nome inválido <br>`;
+    warnings += `Nome nao e valido <br>`;
     entrar = true;
   }
-  if (!correo.test(email.value)) {
-    mostrar += `E-mail não válido <br>`;
+  if (regexEmail.test(email.valeu)) {
+    warnings += `Email invalido  <br>`;
     entrar = true;
   }
+
   if (texto.value.length < 10) {
-    mostrar += `texto inválido <br>`;
+    warnings += `texto inválido <br>`;
     entrar = true;
   }
   if (entrar) {
-    mensage.innerHTML = mostrar;
+    parrafo.innerHTML = warnings;
+  } else {
+    parrafo.innerHTML = "ENVIADO";
   }
 });
-EventCounts.addEventListener("click", enviarFormulario);

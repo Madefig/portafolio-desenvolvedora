@@ -124,7 +124,7 @@
     </section>
       <!--CUARTA PARTE formulario-->
     <section class="contact">
-        <form class="form" id="card" name="formulario">
+        <form action="" method="post" id="form" name="formulario">
           <h2 id="contatos">Deixe seu contato</h2>
           <div>
             <label for="nome">Nome:</label>
@@ -132,7 +132,7 @@
           </div>
           <div>
             <label for="email">E-mail:</label>
-            <input id="e-mail" type="e-mail" placeholder="escreva seu email" name="email_usuario"/>
+            <input id="email" type="email" placeholder="escreva seu email" name="email_usuario"/>
           </div>
           <div>
             <label  for="texto">Texto:</label>
@@ -140,13 +140,10 @@
           </div>
           <div class="button">
             <button id="enviar" type="submit">Enviar</button>
-            <p class="mensage" id="mensage"></p>
-            <br> 
-            <br>
-            <br>
+            <p class="warnings" id="warnings"></p>
         </form>
     </section>
+    <script src="../javascrip/formulario.js"></script>
    </main>
-   <script src="../javascrip/formulario.js"></script>
   </body>
 </html>
